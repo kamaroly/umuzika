@@ -71,7 +71,7 @@ class UploadController extends Controller
 
     $file = $this->storage->disk('local')->get($entry->filename);
 
-    return (new Response($file, 200))
+    return (new Response($file))
       ->header('Content-Type', $entry->mime);
   }
 }

@@ -27,6 +27,11 @@ $router->get('/upload',function(){
 	return view('files.upload');
 });
 
+$router->get('/home',function(){
+	$songs = App\Models\File::all();
+	return view('layouts.default3',compact('songs'));
+});
+
 Route::get('files/get/{filename?}', [
 	'as' => 'files.get', 'uses' => 'UploadController@get']);
 	
