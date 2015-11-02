@@ -3,7 +3,7 @@
         ready: function () {
           $(this).jPlayer("setMedia", {
             title: "Bubble",
-            mp3: "http://cdn4.mixcrate.com/audio/1/0/10026563-Adc9pinn.mp3"
+            mp3: "http://umuzika.app/files/get/1446470248php4BTepW.mp3"
           });
         },
         cssSelectorAncestor: "#jp_container_1",

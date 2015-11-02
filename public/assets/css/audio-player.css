@@ -1,4 +1,4 @@
-
+.main-player 
 .jp-interface {
      background-color: #f2f2f2;
     border-top: 1px solid rgba(0,0,0,.15);
@@ -10,16 +10,19 @@
     width: 100%;
 }
  
+.main-player 
 div.jp-controls-holder {
     clear: both;
     width:1240px;
     margin: 0 auto;
-     
+    top: 0 !important;
     position: relative;
     overflow:hidden;
 }
 
+.main-player 
 a.jp-play,
+.main-player 
 a.jp-pause {
     width:40px;
     height:35px;
@@ -28,19 +31,19 @@ a.jp-pause {
     outline:none;
 }
  
-a.jp-play {
+.main-player a.jp-play {
     background: url(/assets/svg/play.svg) no-repeat 55% center;
     width: 46px;
     margin: 0 6px;
 }
  
-a.jp-pause {
+.main-player a.jp-pause {
     background: url("../img/sprite.png") -40px 0 no-repeat;
     background-size: 200px;
     background-repeat: no-repeat;
     display: none;
 }
-
+.main-player 
  .separator {
     background-image:url("../img/seperator.png");
     background-repeat:no-repeat;
@@ -50,23 +53,25 @@ a.jp-pause {
     margin-top: 7px;
     margin-right: 10px;
 }
-
+.main-player 
 .jp-progress {
+    position: inherit !important;
+    top: 0 !important;
     background-color: #ccc;
     width:480px;
     height:3px;
     float:left;
     margin-top: 19px;
-    height: 2px;
+    height: 2px !important;
 
 }
- 
+.main-player 
 .jp-seek-bar {
     width:0px;
     height:100%;
     cursor: pointer;
 }
- 
+ .main-player 
 .jp-seeking-bg {
     background:#f2f2f2;
 
@@ -74,7 +79,7 @@ a.jp-pause {
     -moz-border-radius:2px;
     border-radius:2px;
 }
- 
+ .main-player 
 .jp-play-bar {
     background-color: #f50;
     width:0px;
@@ -86,7 +91,7 @@ a.jp-pause {
     overflow: visible;
 
 }
- 
+ .main-player 
 .jp-play-bar span {
     position:absolute;
     top: -8px;
@@ -95,8 +100,8 @@ a.jp-pause {
     width: 16px;
     height: 17px;
 }
-
-.jp-repeat{
+.main-player 
+a.jp-repeat{
     text-indent:-9999px;
     float:left;
     outline:none;
@@ -105,11 +110,13 @@ a.jp-pause {
     margin-right: 10px;
     background:url("../svg/repeat-track.svg") no-repeat center;
 }
-.jp-state-looped .jp-repeat:focus{
+.main-player 
+a.jp-state-looped a.jp-repeat:focus{
     background:url("../svg/repeat-track-active.svg") no-repeat center;
 }
-
+.main-player 
 .jp-current-time,
+.main-player 
 .jp-duration {
     font-size:11px;
     font-family:Arial;
@@ -117,6 +124,7 @@ a.jp-pause {
     margin-top: 12px;
     float:left;
 }
+.main-player 
 .jp-current-time {
     float: left;
     display:inline;
@@ -124,26 +132,30 @@ a.jp-pause {
     color: #f50;
     text-align: right;
 }
+.main-player 
 .jp-duration {
     float: left;
     display:inline;
     text-align: right;
     margin-left: 10px;
 }
+.main-player 
 .jp-audio .jp-current-time {
     margin-left:10px;
 }
+.main-player 
 .jp-audio .jp-duration {
     margin-right:10px;
 }
+.main-player 
 .time-sep {
     float:left;
     margin: 13px 3px 0 3px;
- 
     font-size:11px;
     font-family:Arial;
     color:#444444;
 }
+.main-player 
 .jp-audio a.jp-mute,
 .jp-audio a.jp-unmute {
     text-indent:-9999px;
@@ -152,21 +164,19 @@ a.jp-pause {
     margin-left: 10px;
     outline:none;
 }
- 
+ .main-player 
 .jp-mute {
  float:left;
-  /*     background: url(/assets/svg/volume-muted.svg);*/
-    margin-top: 1px;
+    margin-top: -5px;
     margin-left: -10px;
-    /*width: 35px;*/
     display: block;
     border: 0;
-    background: url(/assets/svg/volume-max.svg) no-repeat left center;
+    background: url(/assets/svg/volume-max.svg) no-repeat left center !important;
     outline: 0;
     width: 20px;
     height: 46px;
 }
- 
+ .main-player 
 a.jp-unmute {
    float:left;
   /*     background: url(/assets/svg/volume-muted.svg);*/
@@ -180,7 +190,7 @@ a.jp-unmute {
     width: 20px;
     height: 46px;
 }
- 
+ .main-player 
 .jp-volume-bar {
     float:left;
     margin-top: 17px;
@@ -189,9 +199,10 @@ a.jp-unmute {
     width:70px;
     height:3px;
     cursor: pointer;
- 
+    top: 0 !important;
+    left: inherit !important;
     background: #ccc;
- 
+     position:inherit !important;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
@@ -206,7 +217,7 @@ a.jp-unmute {
         inset 0px 1px 4px rgba(0,0,0,.4),
         0px 1px 0px rgba(255,255,255,.4);
 }
- 
+ .main-player 
 .jp-volume-bar-value {
     background: transparent;
     width:0px;
@@ -215,12 +226,13 @@ a.jp-unmute {
     background: #f50;
     z-index: 1000;
 }
- 
-.jp-volume-bar-value span,.jp-volume-bar-value .handle {
+ .main-player 
+.jp-volume-bar-value span,
+.main-player 
+.jp-volume-bar-value .handle {
     position:absolute;
     top: 0px;
     right: 0px;
- 
     z-index: 1000;
     background:url(../img/volume.png) no-repeat center;
     width: 11px;
@@ -229,6 +241,7 @@ a.jp-unmute {
     background-color: #f50;
     transition: width 50ms;
 }
+.main-player 
 .jp-full-screen {
     background: url(../img/sprite.png) -150px 0 no-repeat;
     float:left;
@@ -238,7 +251,7 @@ a.jp-unmute {
     margin-left: -15px;
     outline:none;
 }
- 
+ .main-player 
 .jp-restore-screen {
     background: url(../img/sprite.png) -150px 0 no-repeat;
     float:left;
@@ -251,23 +264,28 @@ a.jp-unmute {
 
 
 /** SOUND BADGES */
-
+.main-player 
 .avatar {
     margin: 8px 10px 0 0;
     float: left;
 }
+.main-player 
 .sc-media-image img, .sc-media-extra img, .sc-media-object, .sc-media-image .sc-artwork, .sc-media-extra .sc-artwork {
     display: block;
 }
+.main-player 
 .sc-artwork {
     background-size: cover;
     background-position: 50% 50%;
     display: inline-block;
 }
-.image__full, .image {
+.main-player 
+.image__full,
+.main-player  .image {
     text-align: center;
     position: relative;
 }
+.main-player 
 .titleContextContainer {
     margin: 8px 10px 0 0;
     float: left;
@@ -281,25 +299,30 @@ a.jp-unmute {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.main-player 
 .context {
     font-size: 11px;
     line-height: 16px;
 }
+.main-player 
 .context, .title {
     display: block;
     width: 100%;
     text-decoration: none;
 }
+.main-player 
 .sc-truncate {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     word-break: normal;
 }
+.main-player 
 a.sc-link-light {
     color: #999;
     text-decoration: none;
 }
+.main-player 
 .title, .title:visited {
     font-size: 11px;
     color: #666;
